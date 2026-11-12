@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Cinzel';
+  src: url('assets/fonts/cinzel-latin-400-normal.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Cinzel';
+  src: url('assets/fonts/cinzel-latin-700-normal.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('assets/fonts/alegreya-latin-400-normal.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('assets/fonts/alegreya-latin-700-normal.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('assets/fonts/alegreya-latin-400-italic.woff2') format('woff2');
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #0b0910;
+  color: #b9b0c9;
+  font-family: 'Alegreya', Georgia, serif;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+}
+
+#game canvas {
+  display: block;
+  box-shadow: 0 0 60px rgba(0, 0, 0, .8);
+}
+
+#help {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 6px 12px 8px;
+  font-size: 14px;
+  text-align: center;
+  opacity: .75;
+}
+
+#help b { color: #e6c46e; font-weight: 700; }
+
+@media (max-height: 520px) { #help { display: none; } }
